@@ -1,6 +1,6 @@
 # Learn ANSI Common Lisp
 
-Doc: [Click here](https://docs.google.com/document/d/1RwyJIq2BK2aAg6gppS-dchKL2pX-6wmWBBDorLKj8aw/edit?tab=t.0#heading=h.6pdh5zv510ur)
+Learn ANSI Common Lisp - Doc: [Click here](https://docs.google.com/document/d/1RwyJIq2BK2aAg6gppS-dchKL2pX-6wmWBBDorLKj8aw/edit?tab=t.0#heading=h.6pdh5zv510ur)
 
 **Running code:**
 
