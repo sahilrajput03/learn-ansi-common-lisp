@@ -1,3 +1,20 @@
+; Using print (adds a newline before printing automatically):
+(print "Hello Sahil.")
+
+; Using format gives us more control while printing to console:
+; The ~% in the end is for new line character.
+; `t` specifies destination (prints to console).
+; ~% is for new line character
+(format t "Hello, Lisp!~%")
+
+; Single line comments start with a semicolon, and can start at any point in the line
+#|
+  This is a multi-line comment.
+  #|
+    They can be nested!
+  |#
+|#
+
 ; Named Function
 (defun fib (n)
     (format t "Hello, Lisp!~%")
@@ -45,9 +62,6 @@
 (setf height (* 5 9))
 (print (* width height))
 
-
-;; Lists - https://lisp-docs.github.io/docs/tutorial/informal-introduction-to-lisp#13-lists
-
 ; We can define multiple variables at once for local variables but
 ;       can't for global variables:
 (let ((a 10) (b 20) (c 30))
@@ -72,3 +86,5 @@
 ; Output:
 ; (1 4 9 16 25)
 
+
+; TODO Continue - Lists - https://lisp-docs.github.io/docs/tutorial/informal-introduction-to-lisp#13-lists
