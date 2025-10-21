@@ -6,8 +6,8 @@ Learn ANSI Common Lisp - Doc: [Click here](https://docs.google.com/document/d/1R
 
 ## Running code
 
-- Run code from cli: `sbcl --script hello.lisp` ([source](https://chatgpt.com/c/68f13a71-f710-8322-bdf1-d307e7cdf32f))
 - Using nodemon, nodemon `a.lsp`.
+- Using sbcl - `sbcl --script hello.lisp` ([source](https://chatgpt.com/c/68f13a71-f710-8322-bdf1-d307e7cdf32f))
 
 ## Using repl
 
