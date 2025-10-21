@@ -12,4 +12,4 @@ Learn ANSI Common Lisp - Doc: [Click here](https://docs.google.com/document/d/1R
 ## Using repl
 
 - In cli, type `sbcl` and start typing commands.
-- To exit, use command `(quit)` or you can directly press `ctrl+d`.
+- To exit, use command `(quit)` or `(exit)` or you can directly press `ctrl+d`.
