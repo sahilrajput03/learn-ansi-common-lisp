@@ -38,7 +38,7 @@
 
 ;; VARIABLES
 ; In Common Lisp, you can define a variable with defparameter or
-;       defvar (for globals) or let (for local variables).
+;       defvar (for global variables) or let (for local variables).
 ;       Src: https://chatgpt.com/c/68f143bb-f794-8323-bc9e-678117cf14f1
 ; Learn: defparameter is most commonly used for globals you want to initialize every time.
 (defparameter x 20)  ; x is now 20, can be changed

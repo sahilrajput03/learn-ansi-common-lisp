@@ -1,6 +1,7 @@
 ; A simple comment.
 (print "Hello common lisp"); "Hello common lisp"
 (print 123); 123
+; (print myVariable); Throws - The variable MYVARIABLE is unbound.
 
 ; (print ("Hello common lisp")); Throws "illegal function call"
 ; (print (123)); Throws - "illegal function call"
