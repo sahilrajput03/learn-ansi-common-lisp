@@ -48,7 +48,11 @@
 (print x) ; 20
 
 ; Local variable (inside a block/function):
+; `let` is a builtin macro in Common List
+; Syntax/Structure of let:
+; (let (bindings) body...)
 (print (let ((x 20)) x)) ; returns 20
+(print (let ((x 20) (y 30)) (* x y 100) )) ; returns 60000
 
 
 
