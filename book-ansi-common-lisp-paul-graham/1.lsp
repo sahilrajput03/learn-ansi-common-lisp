@@ -18,6 +18,8 @@
 
 ; TODO: Add real code test for below exeptions:
 ; (print myVariable);               Throws exception - The variable MYVARIABLE is unbound.
+; Below two statements throw exception because in Lisp: The first element
+;   inside parentheses is always treated as a function (or macro) to call.
 ; (print ("Hello common lisp"));    Throws exception - "illegal function call"
 ; (print (123));                    Throws exception - "illegal function call"
 
