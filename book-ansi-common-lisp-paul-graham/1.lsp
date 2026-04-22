@@ -101,3 +101,19 @@
 ; (I am writing ALL CODE FROM THE BOOK HERE for easy testing/reference as I go further).
 
 
+(handler-case
+    (do-something)
+  (warning (w)
+    (print "Got a warning"))
+  (error (e)
+    (print "Got an error")))
+; Output: "Got an error"
+
+(print "----- Testing unbound variable exception -----")
+
+; Using below code we do catch the exception but the compiler still throws compile time warning -
+;       ``undefined variable: COMMON-LISP-USER::MY-SPECIAL-VARIABLE``
+; (handler-case
+;     (print my-special-variable)
+;   (unbound-variable ()
+;     (print "variable not declared.")))
