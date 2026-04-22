@@ -2,9 +2,9 @@
 ; Source (2): https://chatgpt.com/c/69e85f82-8e6c-83e8-ac67-ea247b282b29
 
 ; Essentials:
-; Macro → transforms code
-; Quote → “don’t evaluate this”
-; Backquote → “template this code”
+;   Macro → transforms code
+;   Quote → “don’t evaluate this”
+;   Backquote → “template this code”
 
 (defmacro say-hi () '(print "Hi Sahil with quote operator."))
 (say-hi) ; "Hi Sahil with quote operator." 
