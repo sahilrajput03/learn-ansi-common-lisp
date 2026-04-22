@@ -101,6 +101,7 @@
 ; (I am writing ALL CODE FROM THE BOOK HERE for easy testing/reference as I go further).
 
 
+; Lisp error handling: https://chatgpt.com/c/69e871b5-4c54-83e8-81bf-61fa708d64b0
 (handler-case
     (do-something)
   (warning (w)
