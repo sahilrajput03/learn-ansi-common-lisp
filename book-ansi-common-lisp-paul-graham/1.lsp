@@ -16,6 +16,7 @@
 ;         for humans.
 (print(add-numbers 60 10))      ; 70
 
+; TODO: Add real code test for below exeptions:
 ; (print myVariable);               Throws exception - The variable MYVARIABLE is unbound.
 ; (print ("Hello common lisp"));    Throws exception - "illegal function call"
 ; (print (123));                    Throws exception - "illegal function call"
