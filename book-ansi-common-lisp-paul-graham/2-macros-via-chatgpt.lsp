@@ -1,18 +1,28 @@
 ; Source: https://chatgpt.com/c/69e2110a-2250-83e8-a567-948f6f399eea
 
-(defmacro say-hi () '(print "Hi Sahil."))
-(say-hi)
+; Essentials:
+; Macro → transforms code
+; Quote → “don’t evaluate this”
+; Backquote → “template this code”
+
+(defmacro say-hi () '(print "Hi Sahil with quote operator."))
+(say-hi) ; "Hi Sahil with quote operator." 
+
+; Macro that just runs code (no syntax transformation)
+; - Here we are not constructing code we are simply executing a fixed form.
+; - This marco is just for demonstration purpose, this should be a function, not a macro.
+(defmacro say-hi () (print "Hi Sahil, without quote operator."))
+(say-hi) ; "Hi Sahil, without quote operator." 
 
 ; In Common Lisp, the , (comma) is used inside a backquoted expression (`).
 ;   It means: Don’t treat it as literal code, rather “evaluate this part i.e,
 ;   inject actual value.
-
-; With , (inject actual value)
+;  1. With , (inject actual value)
 (defmacro demo1 (x) `(print ,x))
 (demo1 5); 5
 ; Above would expand to: (print 5)   ;; correct ✅
 
-; Without , (treat as literal code)
+;  2. Without , (treat as literal code)
 (defparameter x 20)  ; Setting global variable x to 20
 (defmacro demo2 (x) `(print x))
 (demo2 5); 20 (Prints 20 because x is 20 in global scopre);

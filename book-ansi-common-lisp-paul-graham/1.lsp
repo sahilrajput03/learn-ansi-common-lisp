@@ -1,10 +1,24 @@
 ; A simple comment.
 (print "Hello common lisp"); "Hello common lisp"
 (print 123); 123
-; (print myVariable); Throws - The variable MYVARIABLE is unbound.
+; Function definition & Funciton call
+; `lowercase-with-dashes` is the standard convention for naming functions in Common Lisp.
+(defun add-numbers (a b) (+ a b))
+(print (add-numbers 60 10))     ; 70
 
-; (print ("Hello common lisp")); Throws "illegal function call"
-; (print (123)); Throws - "illegal function call"
+; Below statement works even though there is space b/w `print` and `(..)` but:
+;   ❌ It is stylistically wrong
+;   ❌ It violates standard Lisp formatting conventions
+;   ❌ It reduces readability
+;   ❌ It looks like C/Java-style function syntax, which Lisp avoids
+;      👉🏻 So please avoid this style. Lisp thinking model - Everything is
+;         a list, and spacing is irrelevant—but structure clarity matters
+;         for humans.
+(print(add-numbers 60 10))      ; 70
+
+; (print myVariable);               Throws exception - The variable MYVARIABLE is unbound.
+; (print ("Hello common lisp"));    Throws exception - "illegal function call"
+; (print (123));                    Throws exception - "illegal function call"
 
 ; Prefix Notation: Here, + is called the operator, and the numbers 2 and 3 are
 ;   called the arguments.
