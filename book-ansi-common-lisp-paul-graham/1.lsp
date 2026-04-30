@@ -1,6 +1,14 @@
 ; A simple comment.
 (print "Hello common lisp"); "Hello common lisp"
 (print 123); 123
+
+; Below statement throws exception because in Lisp (e.g., Common Lisp), print takes one argument only.`
+; (print 10 20); Throws exception - Unhandled TYPE-ERROR - `The value 20 is not of type STREAM`
+
+; Printing multiple arguments, we can use `format`
+; Learn: Initial ~% is used for new line character.
+(format t "~%I am Sahil, I love number ~a, ~a, ~a, etc because they have sum as ~a." 7 16 25 7)
+
 ; Function definition & Funciton call
 ; `lowercase-with-dashes` is the standard convention for naming functions in Common Lisp.
 (defun add-numbers (a b) (+ a b))
@@ -31,7 +39,7 @@
 
 ; In Lisp, + is a function, and an expression like (+ 2 3) is a function call.
 
-(print(+ 2 3)); 5
+(print (+ 2 3)); 5
 (print (+ 2 3 4)); 9
 (print (/ (- 7 1) (- 4 2))); 3
 
