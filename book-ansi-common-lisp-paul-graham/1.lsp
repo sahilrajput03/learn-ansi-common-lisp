@@ -5,7 +5,7 @@
 ; Below statement throws exception because in Lisp (e.g., Common Lisp), print takes one argument only.`
 ; (print 10 20); Throws exception - Unhandled TYPE-ERROR - `The value 20 is not of type STREAM`
 
-; Printing multiple arguments, we can use `format`
+; Printing multiple arguments, we can use `format` ChatGPT: https://chatgpt.com/c/69f3694e-375c-83e8-bb7f-8bcf1fc8b7c2
 ; Learn: Initial ~% is used for new line character.
 (format t "~%I am Sahil, I love number ~a, ~a, ~a, etc because they have sum as ~a." 7 16 25 7)
 
