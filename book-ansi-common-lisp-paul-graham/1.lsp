@@ -77,7 +77,7 @@
 ;   elements can be of any type, including lists. 🔥 You have to quote lists, or
 ;   Lisp would take them for function calls. One quote protects a whole
 ;   expression, including expressions within it.
-(print  '(my 3 "Sons")); (MY 3 "Sons") 
+(print '(my 3 "Sons")); (MY 3 "Sons") 
 (print '(the list (a b c) has 3 elements)); (THE LIST (A B C) HAS 3 ELEMENTS)
 
 ; ❤️ You can build lists by calling list. 🔥 Since list is a function, its arguments
