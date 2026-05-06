@@ -25,13 +25,6 @@
 ;         for humans.
 (print(add-numbers 60 10))      ; 70
 
-; TODO: Add real code test for below exeptions:
-; (print myVariable);               Throws exception - The variable MYVARIABLE is unbound.
-; Below two statements throw exception because in Lisp: The first element
-;   inside parentheses is always treated as a function (or macro) to call.
-; (print ("Hello common lisp"));    Throws exception - "illegal function call"
-; (print (123));                    Throws exception - "illegal function call"
-
 ; Prefix Notation: Here, + is called the operator, and the numbers 2 and 3 are
 ;   called the arguments.
 

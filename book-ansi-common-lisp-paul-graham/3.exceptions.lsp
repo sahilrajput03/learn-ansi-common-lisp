@@ -1,8 +1,17 @@
 (print "❤️ Running program:")
+
+; (print myVariable);               Throws exception - The variable MYVARIABLE is unbound.
+; Below two statements throw exception because in Lisp: The first element
+;   inside parentheses is always treated as a function (or macro) to call.
+; (print ("Hello common lisp"));    Throws exception - "illegal function call"
+; (print (123));                    Throws exception - "illegal function call"
+
+; Learn: We try to catch above exceptions using `handler-case` but it cannot
+;        catch compile-time errors. It can only catch runtime errors. So we
+;        have to use `eval` to make them runtime errors.
+
 ; Learn: Even though we catch runtime expections but we still get compile time warning for below.
-
-; Learn: `handler-case` cannot catch compile-time errors — it only works for runtime conditions.
-
+; Learn: `handler-case` cannot catch compile-time errors — it can only catche runtime errors.
 
 (handler-case (eval '(print myVariable))
     (error (c) (format t "~%Caught error: ~a~%" c)));
