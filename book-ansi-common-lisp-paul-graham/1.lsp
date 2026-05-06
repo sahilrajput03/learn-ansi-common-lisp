@@ -7,7 +7,8 @@
 
 ; Printing multiple arguments, we can use `format` ChatGPT: https://chatgpt.com/c/69f3694e-375c-83e8-bb7f-8bcf1fc8b7c2
 ; Learn: Initial ~% is used for new line character.
-(format t "~%I am Sahil, I love number ~a, ~a, ~a, etc because they have sum as ~a." 7 16 25 7)
+(format t "~%I am ~a, I love number ~a, ~a, ~a, etc because they have sum as ~a and I love ~a." "Sahil" 7 16 25 7 "Lisp")
+; Output: I am Sahil, I love number 7, 16, 25, etc because they have sum as 7 and I love Lisp.
 
 ; Function definition & Funciton call
 ; `lowercase-with-dashes` is the standard convention for naming functions in Common Lisp.
